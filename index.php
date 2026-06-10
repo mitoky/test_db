@@ -31,7 +31,7 @@
                     <table class="table table-hover table-striped align-middle mb-0">
                         <thead class="table-primary">
                             <tr>
-                                <th class="ps-4">Numero du departement</th>
+                                <th>Numero du departement</th>
                                 <th>Nom du departement</th>
                                 <th>Prenom Manager</th>
                                 <th>Nom Manager</th>
@@ -42,7 +42,7 @@
                         foreach ($news as $news_ligne) { ?>
                             <tr>
                                 <td><?php echo $news_ligne['numero_departement'] ?></td>
-                                <td class="ps-4"><a href="description.php?num_departement=<?php echo $news_ligne['numero_departement'] ?>"><?php echo $news_ligne['nom_departement'] ?></a></td>
+                                <td class="ps-4"><a href="description.php?id=<?php echo $news_ligne['numero_departement'] ?>"><?php echo $news_ligne['nom_departement'] ?></a></td>
                                 <td><?php echo $news_ligne['Prenom'] ?></td>
                                 <td><?php echo $news_ligne['Nom'] ?></td>
                             </tr>
