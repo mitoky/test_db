@@ -42,7 +42,7 @@
                         foreach ($news as $news_ligne) { ?>
                             <tr>
                                 <td><?php echo $news_ligne['numero_departement'] ?></td>
-                                <td class="ps-4"><a href="description.php?id=<?php echo $news_ligne['numero_departement'] ?>"><?php echo $news_ligne['nom_departement'] ?></a></td>
+                                <td class="ps-4"><a href="description.php?id=<?php echo $news_ligne['numero_departement'] ?>&nom=<?php echo $news_ligne['nom_departement'] ?>"><?php echo $news_ligne['nom_departement'] ?></a></td>
                                 <td><?php echo $news_ligne['Prenom'] ?></td>
                                 <td><?php echo $news_ligne['Nom'] ?></td>
                             </tr>
