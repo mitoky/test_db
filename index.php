@@ -41,8 +41,8 @@
                             <?php
                         foreach ($news as $news_ligne) { ?>
                             <tr>
-                                <td class="ps-4"><a href="description.php?num_departement=<?php echo $news_ligne['numero_departement'] ?>"><?php echo $news_ligne['numero_departement'] ?></a></td>
-                                <td><?php echo $news_ligne['nom_departement'] ?></td>
+                                <td><?php echo $news_ligne['numero_departement'] ?></td>
+                                <td class="ps-4"><a href="description.php?num_departement=<?php echo $news_ligne['numero_departement'] ?>"><?php echo $news_ligne['nom_departement'] ?></a></td>
                                 <td><?php echo $news_ligne['Prenom'] ?></td>
                                 <td><?php echo $news_ligne['Nom'] ?></td>
                             </tr>
