@@ -42,5 +42,22 @@ function get_liste($id){
     $sql = sprintf($sql, $id);
     $result = mysqli_query(dbconnect(), $sql);
     return get_all_lines($sql);
-}  
+} 
+
+function get_info_employe($id){
+    $sql = "SELECT * FROM employees where emp_no = %s";
+    $sql = sprintf($sql, $id);
+    $result = mysqli_query(dbconnect(), $sql);
+    return get_all_lines($sql);
+} 
+
+function get_info_salaire($id){
+    $sql = "SELECT * FROM salaries s where s.emp_no = %s";
+    $sql = sprintf($sql, $id);
+    $result = mysqli_query(dbconnect(), $sql);
+    return get_all_lines($sql);
+} 
+
+
+
 ?>
